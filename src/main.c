@@ -16,7 +16,7 @@ int is_num(char c)
 
 int main(int argc, char **argv)
 {
-	textcolor(COL_RESET, COL_WHITE, COL_BLACK);
+	textcolor(COL_BRIGHT, COL_WHITE, COL_BLACK);
 	char buffer[BUFFER_LEN];
 	char *ptr = &buffer[0];
 	buffer[0] = '\0';
@@ -53,7 +53,7 @@ int main(int argc, char **argv)
 				textcolor(COL_BRIGHT, COL_MAGENTA, COL_BLACK);
 			}
 			printf("%c",c);
-			textcolor(COL_RESET, COL_WHITE, COL_BLACK);
+			textcolor(COL_BRIGHT, COL_WHITE, COL_BLACK);
 			ptr = &buffer[0];
 			buffer[0] = '\0';
 		}
