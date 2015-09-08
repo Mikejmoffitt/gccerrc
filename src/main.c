@@ -24,6 +24,10 @@ int main(int argc, char **argv)
 	while (c != EOF)
 	{
 		c = getchar();
+		if (c == EOF)
+		{
+			return 0;
+		}
 
 		// If it's an alpha character...
 		if (is_alpha((char)c) && ptr < &buffer[BUFFER_LEN - 2])
